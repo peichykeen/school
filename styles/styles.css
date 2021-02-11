@@ -9,7 +9,9 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
   }
+
 
 .navbar-nav {
       margin-left: auto;
@@ -19,13 +21,16 @@
       color: black;
   }
 
+  .logo {
+    font-size: 1.5em;
+  }
 
 .container1 {
-      background-color: #6C63FF;
+      background-color: #FFB663;
   }
 
 .container2 {
-    background-color: #FFB663;
+    background-color: #6C63FF;
 }
 
 .container-fluid {
@@ -67,3 +72,4 @@
 .btn:hover {
   background-color: black;
 }
+
