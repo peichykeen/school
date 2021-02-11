@@ -76,13 +76,13 @@
 
 
 
-    <div class="container-fluid container1" id="home">
+    <div class="container-fluid container1 A" id="home">
         <div class="row">
             <h1>Special Education Staff n Parent Portal</h1>
         </div>
-        <div class="row">
+        <div class="row row2">
             <div class="col">
-                <img src="img/Frame.png" height="600"/>
+                <img src="img/Frame.png" height="100%"/>
             </div>
             <div class="col intro">
                 <h3>Please use this website to:</h3>
@@ -97,71 +97,55 @@
         </div>
     </div>
 
-    <div class="container-fluid container2" id="casemanagers">
-        <div class="row-12">
-            <h1>Case Managers</h1>
-        </div>
-        <div class="row-12 row-card">
-            <div class="card" style="width: 500px;">
-                <div class="row no-gutters">
-                    <div class="col-sm-5">
-                        <img class="card-img" src="/img/male-silhouette.jpg" alt="COOK picture">
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Mr. Cook</h5>
-                            <p class="card-text">Department Chair and Math Specialist</p>
-                            <a href="#" data-toggle="modal" data-target="#dustinModal" class="btn btn-primary">View Profile</a>
+    <div class="container-fluid container2 B" id="casemanagers">
+            <div class="row-12">
+                <h1>Case Managers</h1>
+            </div>
+
+        <div class="row">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="/img/male-silhouette.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title">Mr. Cook</h4>
+                <p class="card-text">Department Chair and Math Specialist</p>
+                <a href="#" data-toggle="modal" data-target="#dustinModal" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+
+            <div class="modal" id="dustinModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Mr. Cook</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <p>Role:  Department Chair & Math Specialist</p>
+                        <br/>
+                        <p>Contact:  ducook@dallasisd.org // (972) 925-2300</p>
+                        <br/>
+                        <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, Math related concerns, grade concerns, and/or transportation requests.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="mailto: ducook@dallasisd.org"><button type="button" class="btn btn-primary">Email me!</button></a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="dustinModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Mr. Cook</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+
+            <div class="card" style="width:400px">
+                <div class="card-body">
+                    <h4 class="card-title">Ms. Gentry</h4>
+                    <p class="card-text">English Specialist</p>
+                    <a href="#" data-toggle="modal" data-target="#gentryModal" class="btn btn-primary">View Profile</a>
                 </div>
-                <div class="modal-body">
-                  <p>Role:  Department Chair & Math Specialist</p>
-                  <br/>
-                  <p>Contact:  ducook@dallasisd.org // (972) 925-2300</p>
-                  <br/>
-                  <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, Math related concerns, grade concerns, and/or transportation requests.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="mailto: ducook@dallasisd.org"><button type="button" class="btn btn-primary">Email me!</button></a>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+                <img class="card-img-bottom" src="/img/female-silhouette.jpg" alt="Card image" style="width:100%">
             </div>
-          </div>
-
-
-
-
-        <div class="row-12 row-card">
-            <div class="card" style="width: 500px;">
-                <div class="row no-gutters">
-                    <div class="col-sm-5">
-                        <img class="card-img" src="/img/female-silhouette.jpg" alt="GENTRY picture">
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Ms. Gentry</h5>
-                            <p class="card-text">English Specialist</p>
-                            <a href="#" data-toggle="modal" data-target="#gentryModal" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <div class="modal" id="gentryModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -186,22 +170,14 @@
             </div>
           </div>
 
-        <div class="row-12 row-card">
-            <div class="card" style="width: 500px;">
-                <div class="row no-gutters">
-                    <div class="col-sm-5">
-                        <img class="card-img" src="/img/male-silhouette.jpg" alt="VOLDING picture">
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Mr. Volding</h5>
-                            <p class="card-text">Science n Social Studies Specialist</p>
-                            <a href="#" data-toggle="modal" data-target="#voldingModal" class="btn btn-primary">View Profile</a>
-                        </div>
-                    </div>
-                </div>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="/img/male-silhouette.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Mr. Volding</h4>
+              <p class="card-text">Science n Social Studies Specialist</p>
+              <a href="#" data-toggle="modal" data-target="#voldingModal" class="btn btn-primary">View Profile</a>
             </div>
-        </div>
+          </div>
     </div>
 
     <div class="modal" id="voldingModal" tabindex="-1" role="dialog">
@@ -227,9 +203,10 @@
           </div>
         </div>
     </div>
+    </div>
 
 
-    <div class="container-fluid container1 containerR" id="resources">
+    <div class="container-fluid container1 containerR C" id="resources">
         <div class="row-12">
             <h1>Content Resources</h1>
         </div>
@@ -280,7 +257,7 @@
         </div>
     </div>
 
-    <div class="container-fluid container2" id="questions">
+    <div class="container-fluid container2 D" id="questions">
         <div class="row-12">
                 <h1>Questions n Answers</h1>
         </div>

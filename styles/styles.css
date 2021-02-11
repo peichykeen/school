@@ -12,6 +12,10 @@
     
   }
 
+.jumbotron {
+  margin: 0;
+  height: 94vh;
+}
 
 .navbar-nav {
       margin-left: auto;
@@ -27,18 +31,15 @@
 
 .container1 {
       background-color: #FFB663;
+      padding: 100px 0;
   }
 
 .container2 {
     background-color: #6C63FF;
+    padding: 100px 0;
 }
 
-.container-fluid {
-  padding: 20px 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .container-fluid h1 {
     text-align: center;
@@ -48,9 +49,6 @@
   align-items: initial;
 }
 
-.card {
-  margin: 20px 0px;
-}
 
 .intro {
   margin-top: 100px;
@@ -71,5 +69,10 @@
 
 .btn:hover {
   background-color: black;
+}
+
+.cards {
+  
+
 }
 
