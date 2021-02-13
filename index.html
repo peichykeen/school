@@ -2,329 +2,354 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex W. Spence</title>
+    <title>Document</title>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light text-black sticky-top">
-            <span class="logo">Alex W. Spence</span>
-            <button  class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#schoolNavbar">
-                <span class="navbar-toggler-icon"></span>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-school"></i>
             </button>
-            <div class="collapse navbar-collapse" id="schoolNavbar"> 
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#casemanagers">Case Manager</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#questions">FAQs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-                <span class="navbar-text ml-auto">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item"><span class="navbar-text ml-auto">
+                  <a role="button" data-toggle="modal" data-target="#contactModal">CONTACT</a></span>
+              </li>
+                <li class="nav-item">
+                  <span class="navbar-text ml-auto">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login
+                        <i class="fa fa-sign-in"></i> LOGIN
                     </a>
                 </span>
+                </li>
+              </ul>
             </div>
-    </nav>
+        </nav>
+    </section>
 
-    <div class="modal fade" role="dialog" id="loginModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <!--BANNER-->
+
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="title">Special Education Portal</p>
+                    <i class="fas fa-search"></i>Find your Case Manager or Content Expert
+                    <br>
+                    <i class="fas fa-book"></i>Find study resources
+                    <br>
+                    <i class="fas fa-question"></i>Get answers to your questions
                 </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label"> Remember me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button class="btn btn-secondary btn-sm ml-auto" type="button" data-dismiss="modal">Cancel</button>
-                                <button class="btn btn-primary btn-sm ml-1" type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-md-6 text-center">
+                    <img src="/img/hero.png" class="img-fluid"/>
                 </div>
             </div>
         </div>
+        <img src="img/bottom.png" class="btm-img"/>
+    </section>
+
+    <!--Teachers-->
+    <div class="container-fluid marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row justify-content-center p-5 m-5 ">
+        <div class="col-lg-3 mb-5">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/male-silhouette.png" />
+  
+          <h2>Mr. Cook</h2>
+          <p>Department Chair and Math Specialist</p>
+          <a href="#" data-toggle="modal" data-target="#dustinModal" class="btn btn-primary">View Profile &raquo;</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 mb-5">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/female-silhouette.png" />
+  
+          <h2>Ms. Gentry</h2>
+          <p>English Specialist</p>
+          <a href="#" data-toggle="modal" data-target="#gentryModal" class="btn btn-primary">View Profile &raquo;</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/male-silhouette.png" />
+  
+          <h2>Mr. Volding</h2>
+          <p>Science n Social Studies Specialist</p>
+          <a href="#" data-toggle="modal" data-target="#voldingModal" class="btn btn-primary">View Profile &raquo;</a>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
     </div>
 
+    
 
 
-    <div class="container-fluid container1 A" id="home">
-        <div class="row">
-            <h1>Special Education Staff n Parent Portal</h1>
-        </div>
-        <div class="row row2">
-            <div class="col">
-                <img src="img/Frame.png" height="100%"/>
-            </div>
-            <div class="col intro">
-                <h3>Please use this website to:</h3>
-                <p>
-                    - Get in contact with your child’s case manager
-                    <br/>
-                    - Learn about resources you can incorporate at home
-                    <br/>
-                    - Find contacts for frequently asked questions.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid container2 B" id="casemanagers">
-            <div class="row-12">
-                <h1>Case Managers</h1>
-            </div>
-
-        <div class="row">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="/img/male-silhouette.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title">Mr. Cook</h4>
-                <p class="card-text">Department Chair and Math Specialist</p>
-                <a href="#" data-toggle="modal" data-target="#dustinModal" class="btn btn-primary">View Profile</a>
-                </div>
-            </div>
-
-            <div class="modal" id="dustinModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title">Mr. Cook</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                        <p>Role:  Department Chair & Math Specialist</p>
-                        <br/>
-                        <p>Contact:  ducook@dallasisd.org // (972) 925-2300</p>
-                        <br/>
-                        <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, Math related concerns, grade concerns, and/or transportation requests.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="mailto: ducook@dallasisd.org"><button type="button" class="btn btn-primary">Email me!</button></a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card" style="width:400px">
-                <div class="card-body">
-                    <h4 class="card-title">Ms. Gentry</h4>
-                    <p class="card-text">English Specialist</p>
-                    <a href="#" data-toggle="modal" data-target="#gentryModal" class="btn btn-primary">View Profile</a>
-                </div>
-                <img class="card-img-bottom" src="/img/female-silhouette.jpg" alt="Card image" style="width:100%">
-            </div>
-        
-        <div class="modal" id="gentryModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Ms. Gentry</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+<!--Resources
+        <div class="col-lg-6 col-md-8 col-sm-12">
+          <div class="accordion mt-4" id="accordionExample">
+            <div class="card1">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Math Resources
                   </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    
+                        <img class="img-thumbnail" src="/img/imagine.png" alt="Imagine Math" />
+                        
+                        <h3>Imagine Math</h3>
+                        <p class="">Number Sense // Math Foundations</p>
+                
                 </div>
-                <div class="modal-body">
-                  <p>Role:  ELAR Specialist</p>
-                  <br/>
-                  <p>Contact:  cgentry@dallasisd.org // (972) 925-2300</p>
-                  <br/>
-                  <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, and/or ELAR questions.</p>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ELAR Resources
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <img class="img-thumbnail" src="img/lexia.png" alt="Lexia" />
+                     
+                        <h3>Lexia</h3>
+                        <p>Grammar // Reading Support</p>
+                        
+                        <img class="img-thumbnail" src="img/achieve.png" alt="Achieve 3000" />
+                        <h3>Achieve 3000</h3>
+                            <p>Reading Fluency // Comprehension</p>
                 </div>
-                <div class="modal-footer">
-                    <a href="mailto: cgentry@dallasisd.org"><button type="button" class="btn btn-primary">Email me!</button></a>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Additional Resources
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <img class="img-thumbnail" src="/img/starr.png" alt="STAAR" />
+                  <h3>STAAR Review</h3>
+                  <p>All Content Review</p>
+                            
+                            
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="card" style="width:400px">
-            <img class="card-img-top" src="/img/male-silhouette.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Mr. Volding</h4>
-              <p class="card-text">Science n Social Studies Specialist</p>
-              <a href="#" data-toggle="modal" data-target="#voldingModal" class="btn btn-primary">View Profile</a>
-            </div>
-          </div>
+        </div>-->
     </div>
 
-    <div class="modal" id="voldingModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+
+
+
+
+
+
+    <!--Modal-->
+    <div class="modal" id="dustinModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Mr. Volding</h5>
+              <div class="modal-header">
+              <h5 class="modal-title">Mr. Cook</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                  <span aria-hidden="true">&times;</span>
               </button>
-            </div>
-            <div class="modal-body">
-              <p>Role:  Science n Social Studies Specialist</p>
+              </div>
+              <div class="modal-body">
+              <p>Role:  Department Chair & Math Specialist</p>
               <br/>
-              <p>Contact:  jvolding@dallasisd.org // (972) 925-2300</p>
+              <p>Contact:  ducook@dallasisd.org // (972) 925-2300</p>
               <br/>
-              <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, and/or any Science/Social Studies questions.</p>
-            </div>
-            <div class="modal-footer">
-                <a href="mailto: jvolding@dallasisd.org"><button type="button" class="btn btn-primary">Email me!</button></a>
+              <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, Math related concerns, grade concerns, and/or transportation requests.</p>
+              </div>
+              <div class="modal-footer">
+              <a href="mailto: ducook@dallasisd.org"><button type="button" class="btn btn-primary">Email me &raquo;</button></a>
+              <a href="tel: 123456789"><button type="button" class="btn btn-primary">Call me &raquo;</button></a>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+              </div>
           </div>
+      </div>
+  </div>
+
+  <div class="modal" id="gentryModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ms. Gentry</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Role:  ELAR Specialist</p>
+          <br/>
+          <p>Contact:  cgentry@dallasisd.org // (972) 925-2300</p>
+          <br/>
+          <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, and/or ELAR questions.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mailto: cgentry@dallasisd.org"><button type="button" class="btn btn-primary">Email me &raquo;</button></a>
+            <a href="tel: 123456789"><button type="button" class="btn btn-primary">Call me &raquo;</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="voldingModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Mr. Volding</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+        <p>Role:  Science n Social Studies Specialist</p>
+        <br/>
+        <p>Contact:  jvolding@dallasisd.org // (972) 925-2300</p>
+        <br/>
+        <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, and/or any Science/Social Studies questions.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mailto: jvolding@dallasisd.org"><button type="button" class="btn btn-primary">Email me &raquo;</button></a>
+            <a href="tel: 123456789"><button type="button" class="btn btn-primary">Call me &raquo;</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
     </div>
     </div>
+</div>
 
+<div class="modal fade" role="dialog" id="loginModal">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Login</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                  <form>
+                      <div class="form-row">
+                          <div class="form-group col-12">
+                              <label class="sr-only" for="loginEmail">Email address</label>
+                              <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                          </div>
+                          <div class="form-group col-12">
+                              <label class="sr-only" for="loginPassword">Password</label>
+                              <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                          </div>
+                          <div class="col">
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input">
+                                  <label class="form-check-label text-dark"> Remember me</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                        <a class="btn btn-large btn-warning btn-info" href="teacher.html">Teacher</a>
+                        &nbsp;
+                        <a class="btn btn-large btn-warning btn-info" href="parent.html">Parent</a>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
-    <div class="container-fluid container1 containerR C" id="resources">
-        <div class="row-12">
-            <h1>Content Resources</h1>
+<div class="modal fade" role="dialog" id="contactModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Contact Us</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-            <div class="row row-content align-items-center">
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/lexia.png" alt="Lexia" />
-                        <div class="media-body align-self-center">
-                        <h3>Lexia</h3>
-                        <p class="d-none d-sm-block">Grammar // Reading Support</p>
-                        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+              
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label text-dark" for="form3Example1">First name</label>
                     </div>
-                </div>
-            </div>
-            <div class="row row-content align-items-center">
-                <div class="col">
-                    <div class="media">
-                        <div class="media-body text-right align-self-center">
-                            <h3>Achieve 3000</h3>
-                            <p class="d-none d-sm-block">Reading Fluency // Comprehension</p>
-                        </div>
-                            <img class="d-flex ml-3 img-thumbnail" src="img/achieve.png" alt="Achieve 3000" />
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" />
+                      <label class="form-label text-dark" for="form3Example2">Last name</label>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="row row-content align-items-center">
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/imagine.png" alt="Imagine Math" />
-                        <div class="media-body align-self-center">
-                        <h3>Imagine Math</h3>
-                        <p class="d-none d-sm-block">Number Sense // Math Foundations</p>
-                        </div>
-                    </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label text-dark" for="form3Example3">Email address</label>
                 </div>
-            </div>
-            <div class="row row-content align-items-center">
-                <div class="col">
-                    <div class="media">
-                        <div class="media-body text-right align-self-center">
-                            <h3>STAAR Review</h3>
-                            <p class="d-none d-sm-block">All Content Review</p>
-                            </div>
-                            <img class="d-flex ml-3 mb-3 img-thumbnail" src="img/staar.gif" alt="STAAR" />
-                    </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example4" class="form-control" />
+                  <label class="form-label text-dark" for="form3Example4">Message</label>
                 </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-warning btn-block mb-4">
+                  SEND
+                </button>
+
+                </div>
+              </form>
             </div>
         </div>
     </div>
+</div>
+</div>
+      </div>
+  </div>
+</div>
 
-    <div class="container-fluid container2 D" id="questions">
-        <div class="row-12">
-                <h1>Questions n Answers</h1>
-        </div>
-        <div class="row row-content">
-            <div class="col">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Attendance</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Absent/Tardy</h5>
-                      <p class="card-text">For any issues regardining attendance, please contact the registrar at #123453423423</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Transportation</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Bus/Change Address</h5>
-                      <p class="card-text">For any issues regardining transportation, please contact the transportation dept. at #123453423423</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Grades/Assignment Issues</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Wrong/Missing Grades</h5>
-                      <p class="card-text">For any issues regardining grades, please contact either your child’s case manager or the content specialist.</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="row row-content">
-            <div class="col">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Technical Issues</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Technology/Equipment</h5>
-                      <p class="card-text">For any issues regardining technology/internet, please contact the tech dept. at #123453423423</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Mental Health</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Counseling/Services</h5>
-                             <p class="card-text">For all mental health issues, please contact the main office at #123453423423</p>
-                         </div>
-                   </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Additional Issues</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Don't see your issue?</h5>
-                            <p class="card-text">For all other issues, please contact the main office at #123453423423</p>
-                        </div>
-                  </div>
-            </div>
-        </div>
-    </div>
 
-     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!-- Core theme JS-->
 </body>
 </html>
