@@ -1,360 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Bootstrap CSS -->
-   <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="css/bootstrap-social.css" />-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="css/styles.css">
 
+        <title>Web Flow | Design & Marketing</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/wave.png"/>
+    </head>
+    <body>
 
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
 
-    <!-- Core theme CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            
+            <nav class="nav bd-container">
+                <a href="#home" class="nav__logo">Web Flow</a>
 
-</head>
-<body>
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="img/logo.png"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-school"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item"><span class="navbar-text ml-auto">
-                  <a role="button" data-toggle="modal" data-target="#contactModal">CONTACT</a></span>
-              </li>
-                <li class="nav-item">
-                  <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> LOGIN
-                    </a>
-                </span>
-                </li>
-              </ul>
-            </div>
-        </nav>
-    </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!--<li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>-->
+                        <!--<li class="nav__item"><a href="#services" class="nav__link">About</a></li>-->
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <!--<li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>-->
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
-    <!--BANNER-->
-
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="title">Special Education Portal</p>
-                    <i class="fas fa-search"></i>Find your Case Manager or Content Expert
-                    <br>
-                    <i class="fas fa-book"></i>Find study resources
-                    <br>
-                    <i class="fas fa-question"></i>Get answers to your questions
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="img/hero.png" class="img-fluid"/>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
-            </div>
-        </div>
-        <img src="img/bottom.png" class="btm-img"/>
-    </section>
+            </nav>
+            
+        </header>
 
-    <!--Teachers-->
-    <div class="container-fluid marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row justify-content-center p-5 m-5 ">
-        <div class="col-lg-3 mb-5">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/male-silhouette.png" />
-  
-          <h2>Mr. Cook</h2>
-          <p>Department Chair and Math Specialist</p>
-          <a href="#" data-toggle="modal" data-target="#dustinModal" class="btn btn-primary">View Profile &raquo;</a>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3 mb-5">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/female-silhouette.png" />
-  
-          <h2>Ms. Gentry</h2>
-          <p>English Specialist</p>
-          <a href="#" data-toggle="modal" data-target="#gentryModal" class="btn btn-primary">View Profile &raquo;</a>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/male-silhouette.png" />
-  
-          <h2>Mr. Volding</h2>
-          <p>Science n Social Studies Specialist</p>
-          <a href="#" data-toggle="modal" data-target="#voldingModal" class="btn btn-primary">View Profile &raquo;</a>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-    </div>
-
+        <main class="l-main">
+            
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Web Flow</h1>
+                        <h2 class="home__subtitle">Web Design & Marketing<br> for small businesses.</h2>
+                        <a href="#" class="button">Book a Consultation</a>
+                    </div>
     
+                    <img src="img/design.svg" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Getting Results</span>
+                        <h2 class="section-title about__initial">Professional Designs <br> SEO Optimized</h2>
+                        <p class="about__description">We create modern and mobile-friendly websites that are search engine optimized to increase traffic and customer retention.  We have short turnarounds with continuing support that fits your growing company's busy schedule.</p>
+                        <a href="#" class="button">Review Plans</a>
+                    </div>
 
+                    <img src="img/pitch.svg" alt="" class="about__img">
+                </div>
+            </section>
 
-<!--Resources
-        <div class="col-lg-6 col-md-8 col-sm-12">
-          <div class="accordion mt-4" id="accordionExample">
-            <div class="card1">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Math Resources
-                  </button>
-                </h2>
-              </div>
-          
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Expertise</span>
+                <h2 class="section-title">What we offer</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" width="512" height="512"><path d="M42.258,280.323a6,6,0,1,0,0,12h.093a5.961,5.961,0,0,0,5.954-6A6.041,6.041,0,0,0,42.258,280.323Z"/><circle cx="68.422" cy="444.212" r="8.871"/><path d="M426.923,440.347H412.382a6,6,0,0,0,0,12h14.541a6,6,0,0,0,0-12Z"/><path d="M480.663,274.989H358.642a6,6,0,0,0-6,6v35.577a6,6,0,0,0,12,0V286.989H474.663V424.082H364.642V356.566a6,6,0,0,0-12,0v73.516a6,6,0,0,0,6,6H480.663a6,6,0,0,0,6-6V280.989A6,6,0,0,0,480.663,274.989Z"/><path d="M237.193,315.85a14.22,14.22,0,1,0-14.222-14.22A14.237,14.237,0,0,0,237.193,315.85Zm0-16.44a2.22,2.22,0,1,1-2.222,2.22A2.224,2.224,0,0,1,237.193,299.41Z"/><path d="M230.885,365.559h-.391a6,6,0,1,0,0,12h.391a6,6,0,0,0,0-12Z"/><path d="M487.442,252.625H431.85V62.439A22.467,22.467,0,0,0,409.406,40H69.874A22.467,22.467,0,0,0,47.43,62.439V251.368H26.312A21.335,21.335,0,0,0,5,272.677V450.692A21.335,21.335,0,0,0,26.312,472h84.219a21.335,21.335,0,0,0,21.313-21.308V336.4h54.128v18.721a10.454,10.454,0,0,1-10.444,10.44,30.7,30.7,0,0,0-30.666,30.659,6,6,0,0,0,6,6H323.525a6,6,0,0,0,6-6A30.7,30.7,0,0,0,300.337,365.6a6.18,6.18,0,0,0-.656-.037h-.822a10.454,10.454,0,0,1-10.444-10.44V336.4h43.89V452.446A19.577,19.577,0,0,0,351.863,472H487.442A19.578,19.578,0,0,0,507,452.446V272.179A19.578,19.578,0,0,0,487.442,252.625Zm-367.6,198.067A9.321,9.321,0,0,1,110.531,460H26.312A9.321,9.321,0,0,1,17,450.692v-20.31H119.844Zm0-170.369H59.88a6,6,0,1,0,0,12h59.964V418.382H17V292.323h8.017a6,6,0,0,0,0-12H17v-7.646a9.321,9.321,0,0,1,9.312-9.309h84.219a9.322,9.322,0,0,1,9.313,9.309Zm179.015,97.236a18.7,18.7,0,0,1,17.676,12.659H157.851a18.7,18.7,0,0,1,17.677-12.659,22.468,22.468,0,0,0,22.444-22.44V336.4h78.443v18.721A22.292,22.292,0,0,0,279,365.559H251.411a6,6,0,0,0,0,12Zm34.2-110.7H193.138a6,6,0,0,0,0,12H332.305V324.4H131.844V278.861h21.294a6,6,0,1,0,0-12H131.017a21.335,21.335,0,0,0-20.486-15.493H59.43V62.439A10.454,10.454,0,0,1,69.874,52H409.406A10.454,10.454,0,0,1,419.85,62.439V252.625H351.863A19.579,19.579,0,0,0,333.059,266.861ZM495,452.446A7.564,7.564,0,0,1,487.442,460H351.863a7.564,7.564,0,0,1-7.558-7.554V272.179a7.564,7.564,0,0,1,7.558-7.554H487.442A7.564,7.564,0,0,1,495,272.179Z"/></svg>
+                        <h3 class="services__title">Web Design</h3>
+                        <p class="services__description">We customize mobile-friedly websites that are fully functioning in as little as one week!  </p>
+                        <br>
+                        <a href="#" class="button">Get Started Now</a>
+                    </div>
+
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" width="512" height="512"><path d="M31.878,279.693a5.977,5.977,0,0,0,3.993-1.523l84.056-74.979,77.478,40.922a6,6,0,0,0,6.4-.5l88.409-66.126-2.84,16.429a6,6,0,1,0,11.824,2.044l5.493-31.771a6,6,0,0,0-4.89-6.934l-31.771-5.492a6,6,0,0,0-2.045,11.824l18.5,3.2-86.829,64.944-77.807-41.1a6,6,0,0,0-6.8.828L27.882,269.215a6,6,0,0,0,4,10.478Z"/><path d="M402.026,286.729c-28.429-28.431-74.69-28.244-103.12.187a70.533,70.533,0,0,0-18.275,30.416A5.993,5.993,0,0,0,286.383,325h.122a5.931,5.931,0,0,0,5.7-4.153,60.98,60.98,0,0,1,58.266-43.382A60.9,60.9,0,1,1,293,358.922a5.986,5.986,0,0,0-11.27,4.039A73.105,73.105,0,0,0,298.9,390.037,72.984,72.984,0,0,0,402.026,286.729Z"/><path d="M177.921,180.008a81.352,81.352,0,1,0-76.5-109A6,6,0,0,0,107.081,79h.038a6.049,6.049,0,0,0,5.668-4.04,69.313,69.313,0,0,1,19.846-28.846l40.034,58.773c1.119,1.635,2.972,3.113,4.953,3.113h69a69.516,69.516,0,0,1-68.7,60.041c-33.118,0-60.881-23.624-67.726-54.384a6,6,0,0,0-11.7,2.64A81.416,81.416,0,0,0,177.921,180.008Zm-.7-89.261L142.181,39.2a69.3,69.3,0,0,1,80.254,6.331ZM188.934,96l42-42a68.83,68.83,0,0,1,16.2,40.281c.035.577.038,1.148.059,1.723Z"/><path d="M446.466,395.714a6,6,0,0,0-8.485,0l-5.026,5.027-7.357-7.357A93.156,93.156,0,0,0,306,256.441v-14.1A6.587,6.587,0,0,0,299.67,236H257.333A6.589,6.589,0,0,0,251,242.339V382H227V266.65a5.4,5.4,0,0,0-5.625-5.65H179.039A5.745,5.745,0,0,0,173,266.65V382H149V243.084A6,6,0,0,0,143.081,237H100.744A5.86,5.86,0,0,0,95,243.084V382H71V297.991A6.179,6.179,0,0,0,64.787,292H22.45c-3.314,0-6.45,2.678-6.45,5.991V382H11c-3.313,0-6,2.234-6,5.548v21.458A6,6,0,0,0,11,415H297.638a93.322,93.322,0,0,0,107.924-1.579l7.356,7.357-5.026,5.026a6,6,0,0,0,0,8.486l52.545,52.544a27.276,27.276,0,0,0,38.574-38.575ZM263,248h31v16.218c-1.979,1.511-3.922,3.091-5.8,4.782H263Zm0,33h13.987A92.325,92.325,0,0,0,263,306.093Zm0,89.485A92.049,92.049,0,0,0,268.148,382H263ZM185,273h30v21H185Zm0,33h30v76H185Zm-78-57h30v21H107Zm0,33h30V382H107ZM28,304H59v21H28Zm0,33H59v45H28ZM17,403v-9H275.782a94.454,94.454,0,0,0,7.675,9Zm390.855-7.322a81.122,81.122,0,1,1,0-114.778A81.251,81.251,0,0,1,407.855,395.678Zm8.485,8.486c.514-.515.994-1.049,1.494-1.572L433,417.756a2.167,2.167,0,1,1-3.065,3.065l-15.164-15.164C415.292,405.157,415.826,404.677,416.34,404.164ZM452.367,461.8l-31.748-31.748.784-.784.044.044a14.168,14.168,0,0,0,20.036-20.036l-.044-.044.785-.785,31.748,31.748Zm38.157,16.554a15.276,15.276,0,0,1-21.6,0l-8.069-8.069,21.605-21.6,8.069,8.07a15.275,15.275,0,0,1,0,21.6Z"/></svg>
+                        <h3 class="services__title">Market Analysis</h3>
+                        <p class="services__description">We compile health audits and competitior analysis to formulate aggressive SEO strategies: backlinks, keywords, and content.</p>
+                        <br>
+                        <a href="#" class="button">Get Started Now</a>
+                    </div>
+
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" width="512" height="512"><path d="M143.12,261a6,6,0,0,0,6-6,106.9,106.9,0,0,1,21.539-64.75,108.371,108.371,0,0,1,54.691-38.311,6,6,0,1,0-3.491-11.481,120.465,120.465,0,0,0-60.792,42.581A118.806,118.806,0,0,0,137.12,255,6,6,0,0,0,143.12,261Z"/><path d="M245.992,147.79c.189,0,.38-.009.571-.028,3.425-.324,6.916-.488,10.377-.488a6,6,0,0,0,0-12c-3.836,0-7.707.183-11.5.542a6,6,0,0,0,.557,11.974Z"/><path d="M480.529,140.366c20.789-22.766,25.92-57.038,12.769-85.283a6,6,0,0,0-9.683-1.708l-41.3,41.315-25.686-25.7,41.344-41.363a6,6,0,0,0-1.688-9.67A77.541,77.541,0,0,0,368.673,33.5a76.769,76.769,0,0,0-21.446,40.751,110.312,110.312,0,0,1-2.924,12.18,192.409,192.409,0,0,0-32.318-12.1l-8.43-48.361A6,6,0,0,0,297.644,21H216.38a6,6,0,0,0-5.91,4.966l-8.461,48.377a187.221,187.221,0,0,0-34.662,13.819L126.3,58.865a6,6,0,0,0-7.723.634L61.119,116.782a6,6,0,0,0-.657,7.721l29.032,40.923a188.217,188.217,0,0,0-15.147,34.6l-50.34,8.445A6,6,0,0,0,19,214.393V295.6a6,6,0,0,0,5,5.916L74.34,310a190.556,190.556,0,0,0,14.517,34.175,93.436,93.436,0,0,1-13.517,3.306,76.887,76.887,0,0,0-63.952,65.1A77.673,77.673,0,0,0,17.8,456.611a6,6,0,0,0,9.683,1.709l39.744-39.761,25.686,25.7-39.79,39.808a6,6,0,0,0,1.687,9.67,77.861,77.861,0,0,0,88.005-15.156,76.917,76.917,0,0,0,21.251-40.946,113.6,113.6,0,0,1,3.76-14.93,188.393,188.393,0,0,0,34.141,14.917l8.5,50.379a6,6,0,0,0,5.916,5h81.264a6,6,0,0,0,5.917-5l8.483-50.372a191.407,191.407,0,0,0,34.677-14.794l41.037,28.827a6,6,0,0,0,7.694-.67l57.461-57.532a6,6,0,0,0,.653-7.706L424.5,344.667c5.963-11.414,9.926-23.292,13.213-34.675l48.321-8.479A6,6,0,0,0,491,295.6V214.393a6,6,0,0,0-4.966-5.911L437.7,200.027a189.566,189.566,0,0,0-12.871-32.845,96.959,96.959,0,0,1,11.312-2.578A76.536,76.536,0,0,0,480.529,140.366ZM84.815,303.085a6,6,0,0,0-4.781-4.3L31,290.529V219.47l49.031-8.225a6,6,0,0,0,4.784-4.3c3.353-11.96,8.75-24.342,16.986-38.967a6,6,0,0,0-.334-6.416L73.186,121.7,123.46,71.579l39.974,28.534a6,6,0,0,0,6.427.346c11.158-6.274,23.924-11.381,39.03-15.61a6,6,0,0,0,4.293-4.744L221.422,33H292.6l8.212,47.1a6,6,0,0,0,4.293,4.747c10.848,3.037,23.314,6.932,35.074,12.947a103.389,103.389,0,0,1-18.428,28.751,144.174,144.174,0,0,0-64.816-15.434c-56.925,0-106.225,33.741-129.515,81.243a5.973,5.973,0,1,0,10.7,5.3A131.816,131.816,0,0,1,312.88,135.615l-40.5,40.516a80.388,80.388,0,0,0-94.346,94.389L137.6,310.969a132.419,132.419,0,0,1-11.371-73.261A5.96,5.96,0,0,0,120.312,231h-.053a5.968,5.968,0,0,0-5.927,5.188,144.195,144.195,0,0,0,14.3,83.711,105.6,105.6,0,0,1-28.512,19.835A176.112,176.112,0,0,1,84.815,303.085ZM188.7,259.847c-.113-1.611-.177-3.228-.177-4.849a68.46,68.46,0,0,1,68.407-68.358c1.594,0,3.186.061,4.773.171ZM427.2,206.911a6,6,0,0,0,4.743,4.291L479,219.434v71.13l-47.063,8.258a6,6,0,0,0-4.741,4.29c-3.605,12.864-7.915,26.5-14.974,39.03a6,6,0,0,0,.33,6.41l28.3,40-50.323,50.385-39.974-28.08a6,6,0,0,0-6.391-.32,178.706,178.706,0,0,1-39.029,16.611,6,6,0,0,0-4.3,4.781L292.569,481H221.452l-8.281-49.072a6,6,0,0,0-4.3-4.779c-11.232-3.145-22.946-8.166-36.68-15.729a101.621,101.621,0,0,1,19.2-28.461,144.135,144.135,0,0,0,65.54,15.763c79.3,0,143.812-64.474,143.812-143.724a143.887,143.887,0,0,0-15.785-65.525,103.457,103.457,0,0,1,28.477-18.208A180.53,180.53,0,0,1,427.2,206.911Zm-102.11,42.238c.165,1.941.254,3.892.254,5.849a68.459,68.459,0,0,1-68.406,68.358c-1.932,0-3.858-.086-5.775-.246Zm-84.5,84.537a80.387,80.387,0,0,0,95.061-95.1l40.279-40.3A131.942,131.942,0,0,1,388.746,255c0,72.633-59.131,131.724-131.812,131.724a132.2,132.2,0,0,1-56.619-12.745ZM372.562,184.679,184.3,373.026c-16.577,16.584-27.659,38.187-32.048,62.473a64.964,64.964,0,0,1-17.929,34.6,65.728,65.728,0,0,1-66.25,15.982L105.635,448.5a6,6,0,0,0,0-8.484L71.465,405.83a6,6,0,0,0-8.486,0L25.513,443.312a66.349,66.349,0,0,1,14.106-63.7,64.764,64.764,0,0,1,37.678-20.3c22.682-3.749,43.857-14.919,61.234-32.3L326.794,138.668a116.913,116.913,0,0,0,32.241-62.279,64.82,64.82,0,0,1,18.125-34.4A65.667,65.667,0,0,1,443.007,25.63l-39.1,39.12a6,6,0,0,0,0,8.483l34.17,34.186a6,6,0,0,0,8.487,0l39.026-39.044c6.826,22.068,1.67,46.826-13.92,63.9a64.646,64.646,0,0,1-37.483,20.49A114.332,114.332,0,0,0,372.562,184.679Z"/><path d="M338.188,156.6A18.093,18.093,0,0,0,325.3,161.94L162.632,324.684A18.218,18.218,0,1,0,188.4,350.442L351.072,187.7h0a18.218,18.218,0,0,0-12.885-31.1Zm4.4,22.614L179.914,341.958a6.218,6.218,0,0,1-8.795-8.791L333.791,170.423a6.218,6.218,0,0,1,8.794,8.792Z"/></svg>
+                        <h3 class="services__title">Management</h3>
+                        <p class="services__description">We provide all customers with monthly maintenance services and supports to help as their web presence evolves.</p>
+                        <br>
+                        <a href="#" class="button">Get Started Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Service Plans</span>
+                <h2 class="section-title">Get what you need</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="img/website.svg" alt="" class="menu__img">
+                        <h3 class="menu__name">Web Design</h3>
+                        <span class="menu__detail">Customize & Setup</span>
+                        <span class="menu__preci">Customized Website</span>
+                        <span class="menu__preci">SEO Audit Report</span>
+                        <span class="menu__preci">Digital Integration</span>
+                        <span class="menu__preci">Platform Testing</span>
+                        </a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="img/report.svg" alt="" class="menu__img">
+                        <h3 class="menu__name">Marketing</h3>
+                        <span class="menu__detail">Monthly Deliverables</span>
+                        <span class="menu__preci">Health Audits</span>
+                        <span class="menu__preci">SEO Optimization</span>
+                        <span class="menu__preci">Content Creation</span>
+                        </a>
+                    </div>
                     
-                        <img class="img-thumbnail" src="/img/imagine.png" alt="Imagine Math" />
-                        
-                        <h3>Imagine Math</h3>
-                        <p class="">Number Sense // Math Foundations</p>
-                
-                </div>
-              </div>
-            </div>
-            <div class="card1">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    ELAR Resources
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <img class="img-thumbnail" src="img/lexia.png" alt="Lexia" />
-                     
-                        <h3>Lexia</h3>
-                        <p>Grammar // Reading Support</p>
-                        
-                        <img class="img-thumbnail" src="img/achieve.png" alt="Achieve 3000" />
-                        <h3>Achieve 3000</h3>
-                            <p>Reading Fluency // Comprehension</p>
-                </div>
-              </div>
-            </div>
-            <div class="card1">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Additional Resources
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <img class="img-thumbnail" src="/img/starr.png" alt="STAAR" />
-                  <h3>STAAR Review</h3>
-                  <p>All Content Review</p>
-                            
-                            
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>-->
-    </div>
-
-
-
-
-
-
-
-    <!--Modal-->
-    <div class="modal" id="dustinModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-              <h5 class="modal-title">Mr. Cook</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-              </button>
-              </div>
-              <div class="modal-body">
-              <p>Role:  Department Chair & Math Specialist</p>
-              <br/>
-              <p>Contact:  ducook@dallasisd.org // (972) 925-2300</p>
-              <br/>
-              <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, Math related concerns, grade concerns, and/or transportation requests.</p>
-              </div>
-              <div class="modal-footer">
-              <a href="mailto: ducook@dallasisd.org"><button type="button" class="btn btn-primary">Email me &raquo;</button></a>
-              <a href="tel: 123456789"><button type="button" class="btn btn-primary">Call me &raquo;</button></a>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="modal" id="gentryModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Ms. Gentry</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Role:  ELAR Specialist</p>
-          <br/>
-          <p>Contact:  cgentry@dallasisd.org // (972) 925-2300</p>
-          <br/>
-          <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, and/or ELAR questions.</p>
-        </div>
-        <div class="modal-footer">
-            <a href="mailto: cgentry@dallasisd.org"><button type="button" class="btn btn-primary">Email me &raquo;</button></a>
-            <a href="tel: 123456789"><button type="button" class="btn btn-primary">Call me &raquo;</button></a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal" id="voldingModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title">Mr. Volding</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-        <p>Role:  Science n Social Studies Specialist</p>
-        <br/>
-        <p>Contact:  jvolding@dallasisd.org // (972) 925-2300</p>
-        <br/>
-        <p>Thank you for joining us at Alex W. Spence.  Please feel free to reach out to me with any general Special Education concerns, and/or any Science/Social Studies questions.</p>
-        </div>
-        <div class="modal-footer">
-            <a href="mailto: jvolding@dallasisd.org"><button type="button" class="btn btn-primary">Email me &raquo;</button></a>
-            <a href="tel: 123456789"><button type="button" class="btn btn-primary">Call me &raquo;</button></a>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-    </div>
-</div>
-
-<div class="modal fade" role="dialog" id="loginModal">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h3 class="modal-title">Login</h3>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-              <div class="container-fluid">
-                  <form>
-                      <div class="form-row">
-                          <div class="form-group col-12">
-                              <label class="sr-only" for="loginEmail">Email address</label>
-                              <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                          </div>
-                          <div class="form-group col-12">
-                              <label class="sr-only" for="loginPassword">Password</label>
-                              <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                          </div>
-                          <div class="col">
-                              <div class="form-check">
-                                  <input type="checkbox" class="form-check-input">
-                                  <label class="form-check-label text-dark"> Remember me</label>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="form-row">
-                        <a class="btn btn-large btn-warning btn-info" href="teacher.html">Teacher</a>
-                        &nbsp;
-                        <a class="btn btn-large btn-warning btn-info" href="parent.html">Parent</a>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="modal fade" role="dialog" id="contactModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title">Contact Us</h3>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-            <div class="container-fluid">
-              
-              <form>
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label text-dark" for="form3Example1">First name</label>
+                    <div class="menu__content">
+                        <img src="img/fix.svg" alt="" class="menu__img">
+                        <h3 class="menu__name">Maintenance</h3>
+                        <span class="menu__detail">Check-ups</span>
+                        <span class="menu__preci">Hosting Services</span>
+                        <span class="menu__preci">Website Updates</span>
+                        <span class="menu__preci">Review & Support Team</span>
+                        </i></a>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label text-dark" for="form3Example2">Last name</label>
+                </div>
+            </section>
+
+            <!--===== APP 
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">App</span>
+                        <h2 class="section-title app__initial">App is aviable</h2>
+                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+                        <div class="app__stores">
+                            <a href="#"><img src="img/app1.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="img/app2.png" alt="" class="app__store"></a>
+                        </div>
                     </div>
-                  </div>
+
+                    <img src="img/movil-app.png" alt="" class="app__img">
+                </div>
+            </section>=======-->
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you want a customized website and increased traffic, get in touch with me so we can see how to help!</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Web Flow</a>
+                    <span class="footer__description">Design & Marketing</span>
+                    <div>
+                       <!-- <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>-->
+                    </div>
                 </div>
 
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label text-dark" for="form3Example3">Email address</label>
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Design</a></li>
+                        <li><a href="#" class="footer__link">Marketing</a></li>
+                        <li><a href="#" class="footer__link">Maintenance</a></li>
+                        <!--<li><a href="#" class="footer__link">Reserve your spot</a></li>-->
+                    </ul>
                 </div>
 
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" />
-                  <label class="form-label text-dark" for="form3Example4">Message</label>
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <!--<li><a href="#" class="footer__link">Event</a></li>-->
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
                 </div>
 
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-warning btn-block mb-4">
-                  SEND
-                </button>
-
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact</h3>
+                    <ul>
+                        
+                        <li>webflow@gmail.com</li>
+                    </ul>
                 </div>
-              </form>
             </div>
-        </div>
-    </div>
-</div>
-</div>
-      </div>
-  </div>
-</div>
 
+            <p class="footer__copy">&#169; 2021 Web Flow. All right reserved | Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> and <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
 
+        </footer>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <!--<script src="/css/jquery.slim.min.js"></script>-->
-    <!--<script src="/css/popper.min.js"></script>-->
-    <!--<script src="/css/bootstrap.min.js"></script>-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     <!-- Core theme JS-->
-</body>
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="js/main.js"></script>
+    </body>
 </html>
